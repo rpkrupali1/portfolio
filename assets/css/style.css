@@ -79,31 +79,34 @@ header nav ul li a {
     padding: 100px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
+    justify-content: space-evenly;
 }
 
 .portfolio_img{
-    flex: 1 80%;
     z-index: 1;
+    width: 1000px;
+    align-content: center;
 }
 
 .portfolio_img img{
     width: 300px;
     height: 300px;
-    position: relative;
-    left: 1150px;
     margin-bottom: 50px;
+    margin-left: 375px;
+}
+
+.hero-title-container{
+   align-content: center;
 }
 
 .hero-title {
    background-color: var(--light-green);
    padding: 6px;
    width: auto;
-   text-align: right;
    font-size: 32px;
-   position: absolute;
-   right:200px;
    padding: 12px 12px;
+   width: 750px;
+   text-align: center;
 }
 
 .make-things {
@@ -127,6 +130,7 @@ header nav ul li a {
     font-size: 50px;
     padding-right: var(--section-padding);
     text-align: right;
+    width: 200px;
 }
 
 .border-left {
@@ -135,6 +139,7 @@ header nav ul li a {
 
 .about-me {
     margin-right: 60px;
+    width: 1500px;
 }
 
 /* about me section */
@@ -144,14 +149,17 @@ header nav ul li a {
     font-size: 22px;
 }
 
+
 /* work section */
 .work {
     display: flex;
     flex-wrap: wrap;
     padding-left: var(--section-padding);
+    width: 1600px;
 }
 
 .work-sections {
+    text-decoration: none;
     background-color: var(--light-green);
     border: 4px solid var(--light-green);
     margin: 15px;
@@ -222,4 +230,21 @@ header nav ul li a {
     margin-top: 15px;
 }
 
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+  @media screen and (min-width: 980px) and (max-width: 1300px) {
+    .portfolio_img img{
+        left: 800px;
+    }
+    
+    .hero-title {
+       background-color: var(--light-green);
+       padding: 6px;
+       width: auto;
+       text-align: right;
+       font-size: 32px;
+       position: absolute;
+       right:200px;
+       padding: 12px 12px;
+    }
 
+  }
