@@ -68,7 +68,6 @@ header nav ul li a {
     text-underline-position: under;
     text-underline-offset: 5px;
     text-decoration-thickness: 3px;
-    /*border-bottom: 2px solid var(--light-green);*/
 }
 
 /* hero section */
@@ -211,6 +210,8 @@ header nav ul li a {
     padding-left: 20px;
 }
 
+/* contact me section */
+
 .contact-me {
     padding-left: var(--section-padding);
     display: flex;
@@ -231,20 +232,133 @@ header nav ul li a {
 }
 
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-  @media screen and (min-width: 980px) and (max-width: 1300px) {
-    .portfolio_img img{
-        left: 800px;
-    }
-    
-    .hero-title {
-       background-color: var(--light-green);
-       padding: 6px;
-       width: auto;
-       text-align: right;
-       font-size: 32px;
-       position: absolute;
-       right:200px;
-       padding: 12px 12px;
+  @media screen and (max-width: 1100px) {
+        .portfolio_img img{
+            margin-left: 250px;
+            align-items: center;
+        }
     }
 
-  }
+    @media screen and (max-width: 980px){
+        .portfolio_img img{
+            margin-left: 200px;
+        }
+
+        header nav ul li a {
+            font-size: 2vw;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        header {
+            padding-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+            justify-content: center;
+            position: relative;
+            margin: 0;
+            width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 4px;
+            font-size: larger;
+            right: 400px;
+
+          }
+
+        header nav {
+            margin: 0;
+        }
+
+        header nav ul {
+            width: 100%;
+        }
+
+        .portfolio_img img{
+            margin-left: 100px;
+        }
+
+        .hero-title {
+            width: 600px;
+         }
+
+         .sections {
+            margin: 10px;
+        }
+
+        .section-header {
+            font-size: 32px;
+            margin-right: 0px;
+        }
+
+        .about-me,
+        .work,
+        .contact-me,
+        .resume {
+            margin-right: none;
+            width: 100%;
+        }
+        
+        /* about me section */
+        .about-me p {
+            font-size: 24px;
+            width: 100%;
+        }
+
+        .work-sections{
+            width: 100%;
+        }
+
+        .contact-me {
+            display: block;
+        }
+
+        .contact-me a {
+            width: 100%;
+            padding-bottom: 10px;
+            margin-bottom: 2px;
+            text-decoration: none;
+            font-size: 22px;
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 575px){
+        .portfolio_img img{
+            margin: 0px;
+            width: 200px;
+            height: 200px;
+            padding: 0px;
+            justify-self: center;
+
+        }
+
+        .hero-title {
+            width: 100%;
+         }
+
+        .sections {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .border-left {
+            border-left: none;
+        }
+
+        .section-header {
+            border-bottom: 4px solid;
+        }
+
+        .contact-me-title-container{
+            margin: 0;
+            align-content: center;
+        }
+
+        .contact-me {
+            margin: 0px;
+        }
+    }
+
