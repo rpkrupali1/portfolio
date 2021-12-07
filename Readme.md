@@ -8,7 +8,7 @@ A website that offers a portfolio of Krupali which includes her profile details,
 * CSS
 
 ## Website
-https://rpkrupali1.github.io/run-buddy/
+https://rpkrupali1.github.io/portfolio/
 
 ## Contribution
 Made with ❤️ by Krupali
