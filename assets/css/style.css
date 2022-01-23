@@ -206,6 +206,10 @@ header nav ul li a {
     background-image: url('../images/RunBuddy.JPG');
 }
 
+.news-4-u {
+    background-image: url('../images/DeployedApplication-VideoPage.PNG');
+}
+
 .work-headers {    
     background-color: var(--light-green);
     position: absolute;
